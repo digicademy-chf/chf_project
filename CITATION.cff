@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: Namenforschung
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Jonatan Jalle
+    family-names: Steller
+    email: jonatan.steller@adwmainz.de
+    affiliation: Academy of Sciences and Literature Mainz
+    orcid: 'https://orcid.org/0000-0002-5101-5275'
+repository-code: >-
+  https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung
+abstract: >-
+  Longer description.
+keywords:
+  - TYPO3
+  - Sitepackage
+  - Portal für Namenforschung
+  - Onomastics
+  - Lexicography
+  - Linguistics
+license: GPL 3
+version: 0.0.1
+date-released: '2023-04-12'

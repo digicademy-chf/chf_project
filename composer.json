@@ -1,0 +1,41 @@
+{
+    "name": "digicademy/namenforschung",
+    "type": "typo3-cms-extension",
+    "description": "Sitepackage for the Portal für Namenforschung in TYPO3",
+    "authors": [
+        {
+            "name": "Jonatan Jalle Steller",
+            "email": "jonatan.steller@adwmainz.de",
+            "role": "Developer",
+            "homepage": "https://www.adwmainz.de"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung",
+    "support": {
+        "issues": "https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung/-/issues",
+        "source": "https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung",
+        "docs": "https://adwmainz.pages.gitlab.rlp.net/digicademy/dfd/namenforschung"
+    },
+    "keywords": [
+        "TYPO3",
+        "Sitepackage",
+        "Portal für Namenforschung",
+        "Onomastics",
+        "Lexicography",
+        "Linguistics"
+    ],
+    "require": {
+        "typo3/cms-core": "^12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Digicademy\\Namenforschung\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "namenforschung"
+        }
+    }
+}
