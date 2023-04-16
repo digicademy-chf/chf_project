@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="EXT:namenforschung/Resources/Private/Language/de.locallang.xlf" date="2023-04-14T10:48:43Z" product-name="namenforschung">
+        <header/>
+        <body>
+            <!-- Backend layouts -->
+            <trans-unit id="backendLayouts.default" resname="backendLayouts.default" approved="yes">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+            <trans-unit id="backendLayouts.twoColumns" resname="backendLayouts.twoColumns" approved="yes">
+                <source>Two columns</source>
+                <target>Zwei Spalten</target>
+            </trans-unit>
+            <trans-unit id="backendLayouts.main" resname="backendLayouts.main" approved="yes">
+                <source>Main content</source>
+                <target>Hauptinhalt</target>
+            </trans-unit>
+            <trans-unit id="backendLayouts.main" resname="backendLayouts.left" approved="yes">
+                <source>Left column</source>
+                <target>Linke Spalte</target>
+            </trans-unit>
+            <trans-unit id="backendLayouts.main" resname="backendLayouts.right" approved="yes">
+                <source>Right column</source>
+                <target>Rechte Spalte</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -13,7 +13,21 @@ authors:
 repository-code: >-
   https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung
 abstract: >-
-  Longer description.
+  This component provides all frontend elements and
+  configuration needed by the Portal für Namenforschung,
+  which also contains the Digital Dictionary of Surnames in
+  Germany (Digitales Famieliennamenwörterbuch Deutschlands,
+  DFD). In addition, it orchestrates other Digicademy
+  extensions and provides additional templates where
+  necessary. The layout is designed to be accessible,
+  provide a sense of control, and benefit from being used
+  as a web app. The extension does not depend on a CSS or
+  JavaScript framework because it is part of an academic
+  long-term project. As such, it benefits from conservative
+  infrastructure choices and code that is relatively easy
+  to maintain without compromising on frontend features
+  that present-day users (both academic and non-academic)
+  have come to expect.
 keywords:
   - TYPO3
   - Sitepackage
@@ -21,6 +35,8 @@ keywords:
   - Onomastics
   - Lexicography
   - Linguistics
+  - Accessibility
+  - Web app
 license: GPL 3
-version: 0.0.1
-date-released: '2023-04-12'
+version: 0.0.2
+date-released: '2023-04-14'

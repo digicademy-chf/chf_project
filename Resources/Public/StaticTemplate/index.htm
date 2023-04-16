@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="de-DE" prefix="og: https://ogp.me/ns#
+    article: https://ogp.me/ns/article#
+    schema: https://schema.org/">
+
+
+<head>
+
+    <!-- BASICS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>Digitales Familiennamenwörterbuch Deutschlands</title>
+
+    <!-- LEAFLET.JS -->
+    <!--<link rel="stylesheet" href="leaflet/leaflet.css?ver=1.9.2" crossorigin=""/>
+    <script src="leaflet/leaflet.js?ver=1.9.2" crossorigin=""></script>-->
+
+    <!-- RESOURCES -->
+    <link rel="stylesheet" href="style.css?ver=0.3.0" media="all">
+    <script src="functions.js?ver=0.3.0" defer></script>
+
+    <!-- APP DATA -->
+    <meta name="theme-color" content="#389000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#389000">
+    <link rel="shortcut icon" href="images/favicon-small.svg">
+    <link rel="mask-icon" href="images/favicon-small-mask.svg" color="#5ac918">
+    <link rel="apple-touch-icon" href="images/favicon-medium-extra.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Digitales Familiennamenwörterbuch Deutschlands">
+
+    <!-- METADATA -->
+    <meta name="description" content="Im Digitalen Familiennamenwörterbuch Deutschlands (DFD) wird der Grundbestand der in Deutschland vorkommenden Familiennamen (inklusive der fremdsprachigen) lexikographisch erfasst, kartiert und zum Teil neu etymologisiert.">
+
+    <!-- HIGHWIRE -->
+    <meta name="citation_title" content="Digitales Familiennamenwörterbuch Deutschlands">
+    <meta name="citation_date" content="2022/06/08">
+    <meta name="citation_inbook_title" content="Digitales Familiennamenwörterbuch Deutschlands">
+    <meta name="citation_publisher" content="Akademie der Wissenschaften und der Literatur Mainz">
+    <meta name="citation_public_url" content="https://www.namenforschung.net/">
+    <meta name="citation_language" content="de-DE">
+
+    <!-- OPENGRAPH -->
+    <meta property="og:title" content="Digitales Familiennamenwörterbuch Deutschlands">
+    <meta property="og:site_name" content="Digitales Familiennamenwörterbuch Deutschlands">
+    <meta property="og:description" content="Im Digitalen Familiennamenwörterbuch Deutschlands (DFD) wird der Grundbestand der in Deutschland vorkommenden Familiennamen (inklusive der fremdsprachigen) lexikographisch erfasst, kartiert und zum Teil neu etymologisiert.">
+    <meta property="og:locale" content="de_DE">
+    <!--<meta property="og:locale:alternate" content="en_GB">-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.namenforschung.net">
+    <meta property="og:image" content="https://adwmainz.pages.gitlab.rlp.net/digicademy/dfd/dfd-next/assets/teaser.png">
+
+    <!-- SCHEMA -->
+    <script type="application/ld+json">
+        [
+            {
+                "@context": "https://schema.org"
+            },
+            {
+                "@type": ["DefinedTermSet","Book"],
+                "@id": "https://www.namenforschung.net/id",
+                "url": "https://www.namenforschung.net",
+                "name": "Digitales Familiennamenwörterbuch Deutschlands",
+                "description": "Im Digitalen Familiennamenwörterbuch Deutschlands (DFD) wird der Grundbestand der in Deutschland vorkommenden Familiennamen (inklusive der fremdsprachigen) lexikographisch erfasst, kartiert und zum Teil neu etymologisiert.",
+                "image": "images/teaser.png",
+                "sameAs": "https://www.wikidata.org/wiki/Property:P6597",
+                "publisher": {
+                    "@type":"Organization",
+                    "@id": "https://nfdi4culture.de/id/E1834",
+                    "url": "https://www.adwmainz.de",
+                    "name": "Akademie der Wissenschaften und der Literatur Mainz",
+                    "sameAs": "https://www.wikidata.org/wiki/Q414163"
+                },
+                "hasDefinedTerm": {
+                    "@type": "DefinedTerm",
+                    "@id": "https://www.namenforschung.net/id/name/1",
+                    "url": "https://www.namenforschung.net/id/name/1",
+                    "name": "Müller",
+                    "description": "Benennung nach Beruf zu mittelhochdeutsch mülnære, mülner, müller, muller, möller, mittelniederdeutsch molner, molre, moller ‘Müller’ (aus lateinisch molīnārius ‘Müller’ entlehnt). Es handelt sich um den Betreiber einer Mühle. Gelegentlich wurde auch der Besitzer oder Pächter einer Mühle als Müller bezeichnet. Müller ist der häufigste Familienname in Deutschland. Die Vorkommen im niederdeutschen Raum basieren auf Verhochdeutschung.",
+                    "image": "images/teaser.png",
+                    "sameAs": "https://www.wikidata.org/wiki/Q8157228",
+                    "inDefinedTermSet": "https://www.namenforschung.net/id",
+                    "termCode": "1"
+                }
+            }
+        ]
+    </script>
+
+</head>
+
+
+<body class="mdlr-page-overview mdlr-variant-color-green">
+
+<main>
+
+    <article>
+
+        <section class="mdlr-form mdlr-sections-main" id="search">
+            <h2>Familiennamen suchen</h2>
+            <form>
+                <fieldset class="mdlr-form-text mdlr-variant-search">
+                    <div>
+                        <label for="search-query">Suchbegriff</label>
+                        <input name="query" id="search-query" class="mdlr-function-search-suggest" type="search" placeholder="Suchbegriff eingeben" title="Suchbegriff eingeben" autocomplete="off" aria-controls="search-query-suggestions" aria-haspopup="true" aria-expanded="false">
+                        <div>
+                            <input name="query-type" class="mdlr-function-search-type" id="search-query-type" type="checkbox" title="Schalter betätigen" data-target="search-query-hint">
+                            <label for="search-query-type" title="Genaue Suche">
+                                <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallWildcard" /></svg>
+                                <span>Genaue Suche</span>
+                            </label>
+                        </div>
+                        <button type="submit">Los</button>
+                    </div>
+                    <ul id="search-query-suggestions" class="mdlr-form-text-suggestions" role="listbox" aria-labelledby="search-query" tabindex=-1 hidden>
+                        <li role="presentation"><a href="article.htm" role="option">Müller</a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Schmidt</a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Schneider</a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Fischer</a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Weber <span>noch nicht bearbeitet</span></a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Selensky</a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Scholz <span>noch nicht bearbeitet</span></a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Selenski</a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Drummer</a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Baer <span>noch nicht bearbeitet</span></a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Epping <span>noch nicht bearbeitet</span></a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Quentin</a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Lambrich</a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Xeller</a></li>
+                        <li role="presentation"><a href="article.htm" role="option">Ondrasik</a></li>
+                    </ul>
+                    <p id="search-query-hint" class="mdlr-form-text-hint" hidden>Die Funktion <strong>„genaue Suche“</strong> ist jetzt aktiv. Dabei werden nur exakte Treffer als Ergebnis geliefert. Um gezielt Buchstaben am Wortanfang oder -ende zu suchen, können Sie bei aktivierter „genauer Suche“ ein Sternchen als Wildcard nutzen, z.B. <strong>Mü*</strong> oder <strong>*er</strong>.</p>
+                    <p class="mdlr-form-text-spotlight mdlr-function-staged mdlr-variant-staged"><span>Name der Woche<span> vom 29. August 2022</span>:</span> <a href="article.htm">Düring</a></p><!-- Funktion zum nachträglichen ersetzen eines Namens und zum Benachrichtigen beim Auswählen eines neuen Namens bedenken -->
+                </fieldset>
+                <fieldset class="mdlr-form-row">
+                    <h3 class="mdlr-variant-hidden">Nach Schlagwort</h3>
+                    <div class="mdlr-select">
+                        <button title="Auswahl anzeigen" id="search-namingmotif-handle" aria-controls="search-namingmotif-content" aria-haspopup="true" aria-expanded="false">
+                            <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallDown" /></svg>
+                            Benennungsmotiv
+                        </button>
+                        <ul id="search-namingmotif-content" role="listbox" aria-labelledby="search-namingmotif-handle" tabindex=-1>
+                            <li role="presentation"><a href="index.htm" title="Benennungsmotiv erkunden" role="option">Beruf <span>16.162</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Benennungsmotiv erkunden" role="option">Herkunft <span>6.854</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Benennungsmotiv erkunden" role="option">Kompositionelles Motiv <span>644</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Benennungsmotiv erkunden" role="option">Patriotisches Motiv <span>79</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Benennungsmotiv erkunden" role="option">Religiöses Motiv <span>25</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Benennungsmotiv erkunden" role="option">Rufname <span>21.339</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Benennungsmotiv erkunden" role="option">Rufnamenmuster <span>725</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Benennungsmotiv erkunden" role="option">Übername <span>10.592</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Benennungsmotiv erkunden" role="option">Wohnstätte <span>8.184</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="mdlr-select">
+                        <button title="Auswahl anzeigen" id="search-morphology-handle" aria-controls="search-morphology-content" aria-haspopup="true" aria-expanded="false">
+                            <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallDown" /></svg>
+                            Namenbildung
+                        </button>
+                        <ul id="search-morphology-content" role="listbox" aria-labelledby="search-morphology-handle" tabindex=-1>
+                            <li role="presentation"><a href="index.htm" title="Namenbildung erkunden" role="option">Derivation <span>23.272</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Namenbildung erkunden" role="option">Komposition <span>12.304</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Namenbildung erkunden" role="option">Univerbierung <span>1.681</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Namenbildung erkunden" role="option">Transposition <span>807</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Namenbildung erkunden" role="option">Flexion <span>4.766</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="mdlr-select">
+                        <button title="Auswahl anzeigen" id="search-language-handle" aria-controls="search-language-content" aria-haspopup="true" aria-expanded="false">
+                            <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallDown" /></svg>
+                            Sprachvorkommen
+                        </button>
+                        <ul id="search-language-content" role="listbox" aria-labelledby="search-language-handle" tabindex=-1>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">albanisch <span>3</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">altpreußisch <span>15</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">amharisch <span>2</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">arabisch <span>389</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">armenisch <span>6</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">bosnisch <span>51</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">bulgarisch <span>79</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">chinesisch (Mandarin) <span>2</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">deutsch <span>47.244</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">dänisch <span>232</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">englisch <span>613</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">estnisch <span>2</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">französisch <span>470</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">friesisch <span>108</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">griechisch <span>67</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">gälisch <span>13</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">hebräisch <span>7</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">Hindi-Urdu <span>81</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">isländisch <span>1</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">italienisch <span>98</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">japanisch <span>71</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">jiddisch <span>1</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">kaschubisch <span>1</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">katalanisch <span>5</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">koreanisch <span>3</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">kroatisch <span>120</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">lettisch <span>67</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">litauisch <span>248</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">mazedonisch <span>25</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">montenegrinisch <span>17</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">niederländisch <span>2.235</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">niedersorbisch <span>59</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">norwegisch <span>112</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">obersorbisch <span>41</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">okzitanisch <span>1</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">Panjabi <span>1</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">paschtu <span>4</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">persisch <span>160</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">polabisch <span>3</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">polnisch <span>1.757</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">pomoranisch <span>5</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">portugiesisch <span>16</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">rumänisch <span>16</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">russisch <span>385</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">sardisch <span>2</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">schwedisch <span>146</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">serbisch <span>79</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">slowakisch <span>488</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">slowenisch <span>94</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">sorbisch <span>358</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">spanisch <span>58</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">tschechisch <span>1.091</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">türkisch <span>2.336</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">ukrainisch <span>420</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">ungarisch <span>136</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">vietnamesisch <span>2</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Sprache erkunden" role="option">weißrussisch <span>86</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="mdlr-select">
+                        <button title="Auswahl anzeigen" id="search-country-handle" aria-controls="search-country-content" aria-haspopup="true" aria-expanded="false">
+                            <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallDown" /></svg>
+                            Hauptverbreitung
+                        </button>
+                        <ul id="search-country-content" role="listbox" aria-labelledby="search-country-handle" tabindex=-1>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Afghanistan <span>47</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Ägypten <span>171</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Albanien <span>33</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Algerien <span>65</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Armenien <span>5</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Äthiopien <span>27</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Belgien <span>1.032</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Bosnien und Herzegowina <span>57</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Brasilien <span>4</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Bulgarien <span>86</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">China <span>3</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Dänemark <span>257</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Deutschland <span>46.544</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Eritrea <span>6</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Estland <span>3</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Finnland <span>2</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Frankreich <span>795</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Griechenland <span>67</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Großbritannien <span>571</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Indien <span>63</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Indonesien <span>41</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Irak <span>61</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Iran <span>154</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Irland <span>64</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Island <span>1</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Israel <span>27</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Italien <span>114</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Japan <span>71</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Jordanien <span>12</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Kosovo <span>36</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Kroatien <span>129</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Lettland <span>65</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Libanon <span>11</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Libyen <span>22</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Litauen <span>139</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Luxemburg <span>94</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Marokko <span>102</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Mazedonien <span>42</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Montenegro <span>23</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Niederlande <span>2.079</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Nordkorea <span>2</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Norwegen <span>116</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Österreich <span>2.229</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Pakistan <span>111</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Polen <span>1.681</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Portugal <span>15</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Republik Moldau <span>6</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Rumänien <span>34</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Russland <span>550</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Saudi-Arabien <span>151</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Serbien <span>100</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Schweden <span>151</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Schweiz <span>526</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Slowenien <span>107</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Slowakei <span>539</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Spanien <span>63</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Sudan <span>89</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Südkorea <span>2</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Syrien <span>44</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Tschechische Republik <span>1.015</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Tunesien <span>5</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Türkei <span>2.338</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Ukraine <span>548</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Ungarn <span>190</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">USA <span>678</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Vietnam <span>2</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Land erkunden" role="option">Weißrussland <span>228</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="mdlr-select">
+                        <button title="Auswahl anzeigen" id="search-type-handle" aria-controls="search-type-content" aria-haspopup="true" aria-expanded="false">
+                            <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallDown" /></svg>
+                            Eintragsart
+                        </button>
+                        <ul id="search-type-content" role="listbox" aria-labelledby="search-type-handle" tabindex=-1>
+                            <li role="presentation"><a href="index.htm" title="Eintragsart erkunden" role="option">Nicht angegeben <span>59</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Eintragsart erkunden" role="option">Hauptartikel <span>12.703</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Eintragsart erkunden" role="option">Haupt- und Verweisartikel <span>3.277</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Eintragsart erkunden" role="option">Verweisartikel <span>38.960</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="mdlr-select">
+                        <button title="Auswahl anzeigen" id="search-rating-handle" aria-controls="search-rating-content" aria-haspopup="true" aria-expanded="false">
+                            <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallDown" /></svg>
+                            Einstufung
+                        </button>
+                        <ul id="search-rating-content" role="listbox" aria-labelledby="search-rating-handle" tabindex=-1>
+                            <li role="presentation"><a href="index.htm" title="Einstufung erkunden" role="option">Erstaufnahme <span>26.991</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Einstufung erkunden" role="option">Erstdeutung <span>4.181</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Einstufung erkunden" role="option">Neubewertung <span>1.698</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Einstufung erkunden" role="option">Neudeutung <span>1.424</span></a></li>
+                            <li role="presentation"><a href="index.htm" title="Einstufung erkunden" role="option">Zusammenführung <span>21.965</span></a></li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <div class="mdlr-sections-split mdlr-variant-inner">
+                    <fieldset class="mdlr-form-rangelinks ">
+                        <h3>Nach Vorkommen</h3>
+                        <ul>
+                            <li><a href="index.htm" title="Vorkommen anzeigen">1 Vorkommen<span><span> bis </span></span>500</a></li>
+                            <li><a href="index.htm" title="Vorkommen anzeigen">501<span><span> bis </span></span>10.000</a></li>
+                            <li><a href="index.htm" title="Vorkommen anzeigen">10.001<span><span> bis </span></span>50.000</a></li>
+                            <li><a href="index.htm" title="Vorkommen anzeigen">50.001<span><span> bis </span></span>100.000+</a></li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="mdlr-form-grid">
+                        <h3>Nach Anfangsbuchstabe</h3>
+                        <ul>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">A</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">B</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">C</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">D</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">E</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">F</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">G</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">H</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">I</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">J</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">K</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">L</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">M</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">N</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">O</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">P</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">Q</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">R</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">S</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">T</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">U</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">V</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">W</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">X</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">Y</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">Z</a></li>
+                            <li><a href="index.htm" class="mdlr-button mdlr-variant-letter mdlr-variant-moreplain" title="Anfangsbuchstaben erkunden">#</a></li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+
+        <div class="mdlr-sections-split mdlr-variant-reverse">
+
+            <section class="mdlr-boxedlist mdlr-form mdlr-variant-links mdlr-sections-main" id="news">
+                <h2>Aktuell im Projekt</h2>
+                <fieldset class="mdlr-form-progress">
+                    <label for="news-status" title="Bearbeitungsstand">ca. 28,2% bearbeitet</label>
+                    <progress id="news-status" class="mdlr-function-staged mdlr-variant-progress" max="200000" value="0" data-value="56452" title="Bearbeitungsstand">56.452 Einträge</progress>
+                    56.452 Einträge <a href="index.htm" class="mdlr-button mdlr-function-staged mdlr-variant-staged" title="Neue Einträge erkunden">+506</a>
+                </fieldset>
+                <ul>
+                    <li><a href="article.htm" title="Nachricht anzeigen">
+                        <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallMore" /></svg>
+                        Was tun bei Hitze?
+                        <span>Namenspecial · 11. August 2022</span>
+                    </a></li>
+                    <li><a href="article.htm" title="Nachricht anzeigen">
+                        <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallMore" /></svg>
+                        In der Weihnachtsbäckerei
+                        <span>Namenspecial · 15. Dezember 2021</span>
+                    </a></li>
+                    <li><a href="article.htm" title="Nachricht anzeigen">
+                        <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallMore" /></svg>
+                        Wiesnflair für Daheimgebliebene
+                        <span>Namenspecial · 7. Oktober 2021</span>
+                    </a></li>
+                </ul>
+                <ul>
+                    <li><a href="article.htm">Projektinfos</a></li>
+                    <li><a href="article.htm">Redaktion</a></li>
+                    <li><a href="index.htm">Weitere Meldungen</a></li>
+                </ul>
+            </section>
+
+            <section class="mdlr-table mdlr-sections-main" id="browse">
+                <h2>In Einträgen stöbern</h2>
+                <div class="mdlr-tabs">
+                    <ul>
+                        <li><a href="#browse-frequent" class="mdlr-button mdlr-variant-plain mdlr-function-tab mdlr-variant-active" title="Häufige Einträge">Häufig</a></li>
+                        <li><a href="#browse-popular" class="mdlr-button mdlr-variant-plain mdlr-function-tab" title="Beliebte Einträge">Beliebt</a></li>
+                        <li><a href="#browse-random" class="mdlr-button mdlr-variant-plain mdlr-function-tab" title="Zufällige Einträge">Zufall</a></li>
+                    </ul>
+                    <a href="index.htm" class="mdlr-button" title="Datenbestand erkunden">Erkunden</a>
+                </div>
+                <table class="mdlr-tabs-segment mdlr-variant-active" id="browse-frequent">
+                    <caption>Häufige Einträge</caption>
+                    <thead>
+                        <tr>
+                            <th>
+                                Rang
+                                <a href="#info1" id="info1anchor" class="mdlr-button mdlr-variant-icon mdlr-variant-inline mdlr-variant-easy mdlr-function-info" title="Erklärung anzeigen">
+                                    <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallInfo" /></svg>
+                                </a>
+                            </th>
+                            <th>Name</th>
+                            <th>
+                                Vorkommen
+                                <a href="#info2" id="info2anchor" class="mdlr-button mdlr-variant-icon mdlr-variant-inline mdlr-variant-easy mdlr-function-info" title="Erklärung anzeigen">
+                                    <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallInfo" /></svg>
+                                </a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">1</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Müller</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">256.003</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">2</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Schmidt</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">190.584</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">3</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Schneider</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">115.749</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">4</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Fischer</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">97.658</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">5</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Weber</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">86.061</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="mdlr-tabs-segment" id="browse-popular" hidden>
+                    <caption>Beliebte Einträge</caption>
+                    <thead>
+                        <tr>
+                            <th>
+                                Aufrufe
+                                <a href="#info3" id="info3anchor" class="mdlr-button mdlr-variant-icon mdlr-variant-inline mdlr-variant-easy mdlr-function-info" title="Erklärung anzeigen">
+                                    <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallInfo" /></svg>
+                                </a>
+                            </th>
+                            <th>Name</th>
+                            <th>
+                                Vorkommen
+                                <a href="#info4" id="info4anchor" class="mdlr-button mdlr-variant-icon mdlr-variant-inline mdlr-variant-easy mdlr-function-info" title="Erklärung anzeigen">
+                                    <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallInfo" /></svg>
+                                </a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">Platz 1</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Selensky</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">62</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">Platz 2</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Scholz</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">30.010</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">Platz 3</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Selenski</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">58</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">Platz 4</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Drummer</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">338</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">Platz 5</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Baer</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">1.716</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="mdlr-tabs-segment" id="browse-random" hidden>
+                    <caption>Zufällige Einträge</caption>
+                    <thead>
+                        <tr>
+                            <th>
+                                Rang
+                                <a href="#info5" id="info5anchor" class="mdlr-button mdlr-variant-icon mdlr-variant-inline mdlr-variant-easy mdlr-function-info" title="Erklärung anzeigen">
+                                    <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallInfo" /></svg>
+                                </a>
+                            </th>
+                            <th>Name</th>
+                            <th>
+                                Vorkommen
+                                <a href="#info6" id="info6anchor" class="mdlr-button mdlr-variant-icon mdlr-variant-inline mdlr-variant-easy mdlr-function-info" title="Erklärung anzeigen">
+                                    <svg width="15" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallInfo" /></svg>
+                                </a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">5.592</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Epping</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">632</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">13.166</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Quentin</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">284</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">17.726</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Lambrich</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">213</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">108.991</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Xeller</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">25</a></td>
+                        </tr>
+                        <tr class="mdlr-variant-link">
+                            <td><a href="article.htm" title="Eintrag anzeigen">503.191</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">Ondrasik</a></td>
+                            <td><a href="article.htm" title="Eintrag anzeigen">2</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+
+        <section class="mdlr-wordcloud mdlr-sections-main" id="cloud">
+            <h2>Visualisierung</h2>
+            <ul>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="4" href="article.htm">Schäfer</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="4" href="article.htm">Bauer</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="2" href="article.htm">Hartmann</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="4" href="article.htm">Koch</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="2" href="article.htm">Braun</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="3" href="article.htm">Schröder</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="6" href="article.htm">Schmidt</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="2" href="article.htm">Lange</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="6" href="article.htm">Weber</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="3" href="article.htm">Neumann</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="4" href="article.htm">Klein</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="5" href="article.htm">Hoffmann</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="1" href="article.htm">Krause</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="6" href="article.htm">Fischer</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="3" href="article.htm">Wolf</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="6" href="article.htm">Schneider</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="1" href="article.htm">Schmitz</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="5" href="article.htm">Meyer</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="5" href="article.htm">Becker</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="5" href="article.htm">Schulz</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="1" href="article.htm">Werner</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="1" href="article.htm">Meier</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="2" href="article.htm">Hofmann</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="6" href="article.htm">Müller</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="3" href="article.htm">Zimmermann</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="2" href="article.htm">Krüger</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="3" href="article.htm">Schwarz</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="5" href="article.htm">Wagner</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="1" href="article.htm">Schmitt</a></li>
+                <li><a class="mdlr-function-staged mdlr-variant-staged" data-weight="4" href="article.htm">Richter</a></li>
+            </ul>              
+        </section>
+
+        <section class="mdlr-buttonrow mdlr-variant-individual mdlr-sections-main" id="outline">
+            <h2>Themenbereiche</h2>
+            <ul>
+                <li><a class="mdlr-button mdlr-variant-color-green mdlr-variant-individual-left" href="index.htm">Infoartikel</a></li>
+                <li><a class="mdlr-button mdlr-variant-color-green mdlr-variant-individual-right" href="article.htm">Glossar</a></li>
+                <li><a class="mdlr-button mdlr-variant-icontext mdlr-variant-color-fuchsia" href="index.htm">
+                    <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#regularExplore" /></svg>
+                    Erkunden
+                </a></li>
+                <li><a class="mdlr-button mdlr-variant-icontext mdlr-variant-color-lilac" href="index.htm">
+                    <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#regularData" /></svg>
+                    Daten
+                </a></li>
+                <li><a class="mdlr-button mdlr-variant-icontext mdlr-variant-color-orange" href="index.htm">
+                    <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#regularOnomastics" /></svg>
+                    Namenforschung
+                </a></li>
+                <li><a class="mdlr-button mdlr-variant-icontext mdlr-variant-color-cyan" href="index.htm">
+                    <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#regularProject" /></svg>
+                    Projekt
+                </a></li>
+            </ul>              
+        </section>
+
+        <div class="mdlr-sections-split">
+
+            <section class="mdlr-text mdlr-sections-main" id="research">
+                <h2>Forschungskontext</h2>
+                <p>Im Digitalen <strong>Familiennamenwörterbuch</strong> Deutschlands (<abbr title="Digitales Familiennamenwörterbuch Deutschlands">DFD</abbr>) wird der Grundbestand der in Deutschland vorkommenden Familiennamen (inklusive der fremdsprachigen) lexikographisch erfasst, kartiert und zum Teil neu etymologisiert. <a href="index.htm">Das Projekt</a> sieht vor, aus etwa 850.000 Namen die <abbr title="circa">ca.</abbr> 200.000 häufigsten zu bearbeiten.</p>
+                <p>Unser Ziel ist es, die Inhalte des digitalen Wörterbuchs einem möglichst breiten Publikum zugänglich zu machen. Außerdem können Interessierte über eine <strong>Schnittstelle</strong> (<abbr title="Application Programming Interface">API</abbr>) auf <a href="index.htm">die Daten</a> zugreifen und sie unter Einhaltung der Lizenz <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><abbr title="Creative Commons Attribution">CC BY</abbr> 4.0</a> nachnutzen.</p>
+                <p>Das <abbr title="Digitales Familiennamenwörterbuch Deutschlands">DFD</abbr> ist Teil eines <strong>Forschungsnetzwerks</strong> zur <a href="index.htm">Namenforschung</a> in Mainz mit verschiedenen Kooperationspartnern.</p>
+            </section>
+
+            <section class="mdlr-boxedlist mdlr-variant-links mdlr-sections-main" id="projects">
+                <h3>Projekte im Verbund</h3>
+                <ul>
+                    <li><a href="index.htm" title="Projekt anzeigen">
+                        <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallMore" /></svg>
+                        Deutscher Familiennamenatlas (<abbr title="Deutscher Familiennamenatlas">DFA</abbr>)
+                    </a></li>
+                    <li><a href="index.htm" title="Projekt anzeigen">
+                        <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallMore" /></svg>
+                        Onymische Grenzmarkierungen: Die Selbstbenennung von Transpersonen (<abbr title="Onymische Grenzmarkierungen: Die Selbstbenennung von Transpersonen">TransOnym</abbr>)
+                    </a></li>
+                    <li><a href="index.htm" title="Projekt anzeigen">
+                        <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallMore" /></svg>
+                        Das Anna und ihr Hund: Weibliche Rufnamen im Neutrum
+                    </a></li>
+                    <li><a href="index.htm" title="Projekt anzeigen">
+                        <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallMore" /></svg>
+                        Transgressive Selbstbenennungspraktiken: Differenzmarkierung durch freien Rufnamenwechsel in Schweden
+                    </a></li>
+                    <li><a href="index.htm" title="Projekt anzeigen">
+                        <svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#smallMore" /></svg>
+                        Namenprojekte am <abbr title="Institut für Geschichtliche Landeskunde an der Universität Mainz e.V.">IGL</abbr>
+                    </a></li>
+                </ul>
+            </section>
+
+        </div>
+
+    </article>
+
+</main>
+
+</body>
+
+
+</html>

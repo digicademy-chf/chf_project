@@ -1,0 +1,5 @@
+// Include the default setup from the Fluid Styled Content extension
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+
+// Include all setup files
+@import 'EXT:site_package/Configuration/TypoScript/Setup/*.typoscript'

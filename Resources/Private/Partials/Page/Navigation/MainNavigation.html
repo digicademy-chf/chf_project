@@ -1,0 +1,11 @@
+    <nav class="mdlr-viewswitcher">
+        <h2>Navigation</h2>
+        <ul>
+            <f:for each="{mainNavigation}" as="mainNavigationItem"><li>
+                <f:link.page pageUid="{mainNavigationItem.data.uid}" target="{mainNavigationItem.target}" title="{mainNavigationItem.title}" class="<f:if condition="{isPrimary}">mdlr-variant-<f:switch expression="{mainNavigationItem.data.pid}"><f:case value="3">fuchsia</f:case><f:case value="4">lilac</f:case><f:case value="5">orange</f:case><f:case value="6">cyan</f:case><f:defaultCase>green</f:defaultCase></f:switch></f:if> <f:if condition="{mainNavigationItem.active}">mdlr-variant-active</f:if>">
+                    <f:if condition="{isPrimary}"><svg width="26" height="26" version="1.1" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#regular<f:switch expression="{mainNavigationItem.data.pid}"><f:case value="3">Explore</f:case><f:case value="4">Data</f:case><f:case value="5">Onomastics</f:case><f:case value="6">Project</f:case><f:defaultCase>Dictionary</f:defaultCase></f:switch>" /></svg></f:if>
+                    {mainNavigationItem.nav_title}
+                </f:link>
+            </li></f:for>
+        </ul>
+    </nav>

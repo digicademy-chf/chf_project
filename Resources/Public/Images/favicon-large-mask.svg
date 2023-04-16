@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 511.99999"
+   version="1.1"
+   id="svg5"
+   xml:space="preserve"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs2"><linearGradient
+       id="linearGradient443"><stop
+         style="stop-color:#95e043;stop-opacity:1"
+         offset="0"
+         id="stop439" /><stop
+         style="stop-color:#5ac918;stop-opacity:1"
+         offset="0.38555849"
+         id="stop7158" /><stop
+         style="stop-color:#389000;stop-opacity:1"
+         offset="1"
+         id="stop441" /></linearGradient><radialGradient
+       xlink:href="#linearGradient443"
+       id="radialGradient445"
+       cx="330.45938"
+       cy="-251.02827"
+       fx="330.45938"
+       fy="-251.02827"
+       r="256"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.3032331,0,2.0149161e-5,1.659603,-499.55166,815.34351)" /></defs><rect
+     style="fill:url(#radialGradient445);fill-opacity:1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
+     id="rect1536"
+     width="514"
+     height="514"
+     x="-0.99999994"
+     y="-0.99999994" /><path
+     id="circle6078"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:9.9769;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+     d="m 256.40153,115.10462 c -74.99216,0.0392 -140.96675,49.5499 -161.951828,121.54599 L 203.8957,257.6177 c 4.28843,-40.43137 38.38001,-71.11828 79.0383,-71.14521 20.44217,0.003 40.09994,7.87572 54.89121,21.98597 L 387.6637,177.80883 C 355.6249,138.15612 307.38022,115.10948 256.40153,115.10462 Z m 125.87942,84.8664 -33.90491,20.84213 c 9.17615,13.285 14.09284,29.04831 14.09448,45.19425 -0.025,35.91755 -24.1218,67.36003 -58.79692,76.72501 l 29.72847,64.67147 c 47.4208,-22.82891 77.5898,-70.78583 77.63974,-123.41552 -0.002,-30.4208 -10.1191,-59.97763 -28.76086,-84.01734 z m -240.34452,62.1355 c -0.0631,1.18348 -0.12625,2.36943 -0.157,3.55486 8.2e-4,67.46006 54.68831,122.14726 122.14834,122.14834 13.51744,-0.0278 26.93729,-2.29207 39.71219,-6.71082 l -16.41898,-35.71998 c -1.42698,0.0918 -2.857,0.14882 -4.28698,0.1634 -40.82454,-0.0278 -74.99853,-30.95816 -79.08316,-71.57774 z" /></svg>
