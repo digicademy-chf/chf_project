@@ -48,7 +48,6 @@ Further technical features:
 - First version of DA Lex
 - Initial implementation of the frontend
 - Basic content in the new system, revised
-- Docker environment
 
 **Maps, serialisations, bibliography**
 
