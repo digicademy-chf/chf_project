@@ -38,7 +38,7 @@ defined( 'TYPO3' ) or die();
         'loginBackgroundImage' => 'EXT:' . $extKey . '/Resources/Public/Icons/Background.svg',
         'loginLogo'            => 'EXT:' . $extKey . '/Resources/Public/Icons/Login.svg',
         'loginLogoAlt'         => 'Portal für Namenforschung',
-        'loginHighlightColor'  => '#5ac918'
+        'loginHighlightColor'  => '#389000'
     ];
 
 } )();
