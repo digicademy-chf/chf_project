@@ -27,6 +27,28 @@
         "Accessibility",
         "Web app"
     ],
+    "repositories": [
+		{
+			"type": "vcs",
+			"url": "https://gitlab.rlp.net/adwmainz/digicademy/t3xdev/da-bib.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://gitlab.rlp.net/adwmainz/digicademy/t3xdev/da-ingest.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://gitlab.rlp.net/adwmainz/digicademy/t3xdev/da-lex.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://gitlab.rlp.net/adwmainz/digicademy/t3xdev/da-map.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://gitlab.rlp.net/adwmainz/digicademy/t3xdev/da-quality.git"
+		}
+    ],
     "require": {
         "typo3/cms-adminpanel": "^12",
         "typo3/cms-backend": "^12",
@@ -62,7 +84,12 @@
         "typo3/cms-tstemplate": "^12",
         "typo3/cms-viewpage": "^12",
         "typo3/cms-webhooks": "^12",
-        "typo3/cms-workspaces": "^12"
+        "typo3/cms-workspaces": "^12",
+		"digicademy/da-bib": "@dev",
+		"digicademy/da-ingest": "@dev",
+		"digicademy/da-lex": "@dev",
+		"digicademy/da-map": "@dev",
+		"digicademy/da-quality": "@dev"
     },
     "autoload": {
         "psr-4": {
