@@ -1,32 +1,16 @@
 <?php
 
-# TCA Overrides for the Pages Table
-# Copyright (c) 2023 Jonatan Jalle Steller <jonatan.steller@adwmainz.de>
+# This file is part of the extension DA Bib for TYPO3.
 #
-# All rights reserved
-#
-# This script is part of the TYPO3 project. The TYPO3 project is
-# free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 3 of the License, or
-# (at your option) any later version.
-#
-# The GNU General Public License can be found at
-# http://www.gnu.org/copyleft/gpl.html.
-#
-# This script is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# This copyright notice MUST APPEAR in all copies of the script!
+# For the full copyright and license information, please read the
+# LICENSE.txt file that was distributed with this source code.
 
 
 // Prevent script from being called directly
 defined( 'TYPO3' ) or die();
 
 // Add overrides for this extension and table
-( function( $extKey='namenforschung', $table='pages' ) {
+( function( $extKey='namenforschung' ) {
 
     // Add a default TSConfig
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(

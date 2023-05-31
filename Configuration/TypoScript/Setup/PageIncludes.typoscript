@@ -1,7 +1,7 @@
 // Includes
 page {
 
-    //Include CSS file(s)
+    //Include CSS files
     includeCSS {
         website = EXT:namenforschung/Resources/Public/Css/website.css
     }
