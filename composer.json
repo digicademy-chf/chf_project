@@ -100,5 +100,7 @@
         "typo3/cms": {
             "extension-key": "namenforschung"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
