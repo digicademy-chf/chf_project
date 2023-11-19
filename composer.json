@@ -1,52 +1,76 @@
 {
-    "name": "digicademy/namenforschung",
+    "name": "digicademy/chf_project",
     "type": "typo3-cms-extension",
-    "description": "Sitepackage for the Portal für Namenforschung in TYPO3",
+    "description": "Boilerplate TYPO3 sitepackage for the Cultural Heritage Framework",
     "authors": [
         {
             "name": "Jonatan Jalle Steller",
             "email": "jonatan.steller@adwmainz.de",
             "role": "Developer",
             "homepage": "https://www.adwmainz.de"
+        },
+        {
+            "name": "CHF Project contributors"
         }
     ],
     "license": "GPL-2.0-or-later",
-    "homepage": "https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung",
+    "homepage": "https://extensions.typo3.org/extension/chf_project",
     "support": {
-        "issues": "https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung/-/issues",
-        "source": "https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung",
-        "docs": "https://adwmainz.pages.gitlab.rlp.net/digicademy/dfd/namenforschung"
+        "issues": "https://github.com/digicademy-chf/chf_project/issues",
+        "source": "https://github.com/digicademy-chf/chf_project",
+        "docs": "https://digicademy-chf.github.io/chf_project"
     },
     "keywords": [
         "TYPO3",
         "Sitepackage",
-        "Portal für Namenforschung",
-        "Onomastics",
-        "Lexicography",
-        "Linguistics",
+        "Boilerplate",
         "Accessibility",
-        "Web app"
+        "Web app",
+        "Data",
+        "Research",
+        "Academia",
+        "Academic"
     ],
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://gitlab.rlp.net/adwmainz/digicademy/t3xdev/da-bib.git"
+            "url": "https://github.com/digicademy-chf/chf_base.git"
         },
         {
             "type": "vcs",
-            "url": "https://gitlab.rlp.net/adwmainz/digicademy/t3xdev/da-ingest.git"
+            "url": "https://github.com/digicademy-chf/chf_bib.git"
         },
         {
             "type": "vcs",
-            "url": "https://gitlab.rlp.net/adwmainz/digicademy/t3xdev/da-lex.git"
+            "url": "https://github.com/digicademy-chf/chf_lex.git"
         },
         {
             "type": "vcs",
-            "url": "https://gitlab.rlp.net/adwmainz/digicademy/t3xdev/da-map.git"
+            "url": "https://github.com/digicademy-chf/chf_map.git"
         },
         {
             "type": "vcs",
-            "url": "https://gitlab.rlp.net/adwmainz/digicademy/t3xdev/da-quality.git"
+            "url": "https://github.com/digicademy-chf/chf_gloss.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/digicademy-chf/chf_pub.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/digicademy-chf/chf_object.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/digicademy-chf/chf_media.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/digicademy/vis.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/digicademy/qad.git"
         }
     ],
     "require": {
@@ -85,20 +109,25 @@
         "typo3/cms-viewpage": "^12",
         "typo3/cms-webhooks": "^12",
         "typo3/cms-workspaces": "^12",
-        "digicademy/da-bib": "dev-main",
-        "digicademy/da-ingest": "dev-main",
-        "digicademy/da-lex": "dev-main",
-        "digicademy/da-map": "dev-main",
-        "digicademy/da-quality": "dev-main"
+        "digicademy/chf_base": "dev-main",
+        "digicademy/chf_bib": "dev-main",
+        "digicademy/chf_lex": "dev-main",
+        "digicademy/chf_map": "dev-main",
+        "digicademy/chf_gloss": "dev-main",
+        "digicademy/chf_pub": "dev-main",
+        "digicademy/chf_object": "dev-main",
+        "digicademy/chf_media": "dev-main",
+        "digicademy/vis": "dev-main",
+        "digicademy/qad": "dev-main"
     },
     "autoload": {
         "psr-4": {
-            "Digicademy\\Namenforschung\\": "Classes/"
+            "Digicademy\\CHFProject\\": "Classes/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "namenforschung"
+            "extension-key": "chf_project"
         }
     },
     "minimum-stability": "dev",

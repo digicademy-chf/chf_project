@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: Namenforschung
+title: CHF Project
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
@@ -10,33 +10,30 @@ authors:
     email: jonatan.steller@adwmainz.de
     affiliation: Academy of Sciences and Literature Mainz
     orcid: 'https://orcid.org/0000-0002-5101-5275'
+  - name: "CHF Project contributors"
 repository-code: >-
-  https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung
+  https://github.com/digicademy-chf/chf_project
 abstract: >-
-  This component provides all frontend elements and
-  configuration needed by the Portal für Namenforschung,
-  which also contains the Digital Dictionary of Surnames in
-  Germany (Digitales Famieliennamenwörterbuch Deutschlands,
-  DFD). In addition, it orchestrates other Digicademy
-  extensions and provides additional templates where
-  necessary. The layout is designed to be accessible,
-  provide a sense of control, and benefit from being used
-  as a web app. The extension does not depend on a CSS or
-  JavaScript framework because it is part of an academic
-  long-term project. As such, it benefits from conservative
-  infrastructure choices and code that is relatively easy
-  to maintain without compromising on frontend features
-  that present-day users (both academic and non-academic)
-  have come to expect.
+  This is a boilerplate sitepackage for the Cultural
+  Heritage Framework (CHF). It contains examples of
+  configuration, overrides, and custom assets to
+  orchestrate components of the CHF, including optional
+  components like generic APIs, visualisations, and
+  quality assurance. The goal is to implement relatively
+  conservative server infrastructure that is easy to
+  maintain. This is combined with frontend flourishes
+  that academic and non-academic users come to expect
+  without building a JavaScript client.
 keywords:
   - TYPO3
   - Sitepackage
-  - Portal für Namenforschung
-  - Onomastics
-  - Lexicography
-  - Linguistics
+  - Boilerplate
   - Accessibility
   - Web app
+  - Data
+  - Research
+  - Academia
+  - Academic
 license: GPL 3
-version: 0.0.2
-date-released: '2023-04-14'
+version: 0.6.0
+date-released: '2023-11-27'
