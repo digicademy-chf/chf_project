@@ -1,4 +1,5 @@
 <?php
+defined('TYPO3') or die();
 
 # This file is part of the extension DA Bib for TYPO3.
 #
@@ -26,5 +27,3 @@ defined( 'TYPO3' ) or die();
     ];
 
 } )();
-
-?>

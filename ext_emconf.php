@@ -1,4 +1,5 @@
 <?php
+defined('TYPO3') or die();
 
 $EM_CONF[$_EXTKEY] = [
     'title'          => 'CHF Project',
@@ -24,5 +25,3 @@ $EM_CONF[$_EXTKEY] = [
         ]
      ]
 ];
-
-?>
