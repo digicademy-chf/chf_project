@@ -1,10 +1,10 @@
-..  image:: https://img.shields.io/badge/PHP-8.1/8.2-blue.svg
-    :alt: PHP 8.1/8.2
+..  image:: https://img.shields.io/badge/PHP-8.2/8.3-blue.svg
+    :alt: PHP 8.2/8.3
     :target: https://www.php.net/downloads
 
-..  image:: https://img.shields.io/badge/TYPO3-12-orange.svg
-    :alt: TYPO3 12
-    :target: https://get.typo3.org/version/12
+..  image:: https://img.shields.io/badge/TYPO3-13-orange.svg
+    :alt: TYPO3 13
+    :target: https://get.typo3.org/version/13
 
 ..  image:: https://img.shields.io/badge/License-GPLv3-blue.svg
     :alt: License: GPL v3
