@@ -109,16 +109,16 @@
         "typo3/cms-viewpage": "^13",
         "typo3/cms-webhooks": "^13",
         "typo3/cms-workspaces": "^13",
-        "digicademy/chf_base": "dev-main",
-        "digicademy/chf_bib": "dev-main",
-        "digicademy/chf_lex": "dev-main",
-        "digicademy/chf_map": "dev-main",
-        "digicademy/chf_gloss": "dev-main",
-        "digicademy/chf_pub": "dev-main",
-        "digicademy/chf_object": "dev-main",
-        "digicademy/chf_media": "dev-main",
-        "digicademy/vis": "dev-main",
-        "digicademy/qad": "dev-main"
+        "digicademy/chf_base": "dev-main@dev",
+        "digicademy/chf_bib": "dev-main@dev",
+        "digicademy/chf_lex": "dev-main@dev",
+        "digicademy/chf_map": "dev-main@dev",
+        "digicademy/chf_gloss": "dev-main@dev",
+        "digicademy/chf_pub": "dev-main@dev",
+        "digicademy/chf_object": "dev-main@dev",
+        "digicademy/chf_media": "dev-main@dev",
+        "digicademy/vis": "dev-main@dev",
+        "digicademy/qad": "dev-main@dev"
     },
     "autoload": {
         "psr-4": {

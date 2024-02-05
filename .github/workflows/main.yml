@@ -1,0 +1,42 @@
+name: Publish documentation
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+
+  # Build documentation
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up GitHub Pages
+        uses: actions/configure-pages@v4
+        id: pages
+      - name: Render documentation
+        uses: TYPO3-Documentation/gh-render-action@0.1.0
+        id: rendering
+      - name: Add index file
+        run: |
+          echo -e "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n<meta charset=\"utf-8\"/>\n<meta http-equiv=\"Refresh\" content=\"0; url='en-us/Index.html'\"/>\n<title>Go to main page</title>\n</head>\n\n<body>\n<a href=\"en-us/Index.html\">Go to main page</a>\n</body>\n\n</html>" > ${{ steps.rendering.outputs.renderedPath }}/index.html
+      - name: Upload documentation artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: github-pages
+          path: ${{ steps.rendering.outputs.renderedPath }}
+
+  # Deploy documentation
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy artifact to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
