@@ -1,2 +1,0 @@
-# Include all page layouts
-@import 'EXT:namenforschung/Configuration/TsConfig/Page/PageLayout/*.tsconfig'

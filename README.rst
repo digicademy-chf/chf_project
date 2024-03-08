@@ -31,7 +31,6 @@ Roadmap
 
 This is a pre-release version. The following steps are required for the software to move out of beta:
 
-- All basic configuration is ready
 - Examples to overwrite styles and templates
 - Removal of "dev" versions
 - Documentation completed

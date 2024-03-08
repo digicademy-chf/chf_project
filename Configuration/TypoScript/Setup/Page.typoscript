@@ -1,5 +1,0 @@
-// Set the default page object 
-page = PAGE
-page {
-    typeNum = 0
-}
