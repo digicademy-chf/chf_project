@@ -4,6 +4,9 @@ on:
   push:
     branches:
     - main
+  pull_request:
+    branches:
+    - main
 
 jobs:
 
@@ -15,7 +18,7 @@ jobs:
         uses: actions/configure-pages@v4
         id: pages
       - name: Render documentation
-        uses: TYPO3-Documentation/gh-render-action@0.1.0
+        uses: TYPO3-Documentation/gh-render-action@main
         id: rendering
       - name: Add index file
         run: |

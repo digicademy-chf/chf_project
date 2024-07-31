@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guides
+    xmlns="https://www.phpdoc.org/guides"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.phpdoc.org/guides ../vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd"
+    links-are-relative="true"
+    default-code-language="php"
+    >
+    <extension
+        class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+        project-home="https://extensions.typo3.org/extension/chf_project"
+        project-contact="mailto:jonatan.steller@adwmainz.de"
+        project-repository="https://github.com/digicademy-chf/chf_project"
+        project-issues="https://github.com/digicademy-chf/chf_project/issues"
+        project-discussions="https://github.com/orgs/digicademy-chf/discussions"
+        edit-on-github-branch="main"
+        edit-on-github="digicademy-chf/chf_project"
+        typo3-core-preferred="stable"
+        interlink-shortcode="digicademy/chf_project"
+    />
+    <project
+        title="CHF Project"
+        version="0.6"
+        release="0.6.0"
+        copyright="since 2023 by Jonatan Jalle Steller and CHF Project contributors"
+    />
+</guides>
