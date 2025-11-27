@@ -13,8 +13,8 @@ defined('TYPO3') or die();
 $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
     'backendFavicon'       => 'EXT:chf_project/Resources/Public/Images/favicon-small.svg',
     'backendLogo'          => 'EXT:chf_project/Resources/Public/Icons/Backend.svg',
-    'loginBackgroundImage' => 'EXT:chf_project/Resources/Public/Icons/Background.svg',
     'loginLogo'            => 'EXT:chf_project/Resources/Public/Icons/Login.svg',
     'loginLogoAlt'         => 'Cultural Heritage Framework',
-    'loginHighlightColor'  => '#9b1526'
+    'loginHighlightColor'  => '#9b1526',
+    'loginBackgroundImage' => 'EXT:chf_project/Resources/Public/Icons/Background.svg'
 ];

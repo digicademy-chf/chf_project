@@ -1,7 +1,8 @@
 {
     "name": "digicademy/chf_project",
+    "version": "2.0.0",
     "type": "typo3-cms-extension",
-    "description": "Boilerplate TYPO3 sitepackage for the Cultural Heritage Framework",
+    "description": "CHF Project - Boilerplate TYPO3 sitepackage for the Cultural Heritage Framework",
     "authors": [
         {
             "name": "Jonatan Jalle Steller",
@@ -32,8 +33,15 @@
         "Academic"
     ],
     "require": {
-        "typo3/cms-core": "^13",
-        "typo3/cms-fluid-styled-content": "^13"
+        "typo3/cms-core": "^14",
+        "digicademy/chf_base": "^2",
+        "digicademy/chf_bib": "^2",
+        "digicademy/chf_gloss": "^2",
+        "digicademy/chf_lex": "^2",
+        "digicademy/chf_map": "^2",
+        "digicademy/chf_media": "^2",
+        "digicademy/chf_object": "^2",
+        "digicademy/chf_pub": "^2"
     },
     "autoload": {
         "psr-4": {
