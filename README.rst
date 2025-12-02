@@ -10,6 +10,14 @@
     :alt: License: GPL v3
     :target: https://www.gnu.org/licenses/gpl-3.0
 
+**This was a boilerplate sitepackage for the CHF2. All code was moved to CHF
+Base since TYPO3's site sets allow for sitepackage-less installations. If you
+are looking for sample sitepackages, refer to
+`namenforschung <https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung>`
+or
+`corpusvitrearum <https://gitlab.rlp.net/adwmainz/digicademy/cvma/corpusvitrearum>`
+instead.**
+
 ===========
 CHF Project
 ===========
