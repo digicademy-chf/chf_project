@@ -13,9 +13,9 @@
 **This was a boilerplate sitepackage for the CHF2. All code was moved to CHF
 Base since TYPO3's site sets allow for sitepackage-less installations. If you
 are looking for sample sitepackages, refer to
-`namenforschung <https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung>`
+`namenforschung <https://gitlab.rlp.net/adwmainz/digicademy/dfd/namenforschung>`__
 or
-`corpusvitrearum <https://gitlab.rlp.net/adwmainz/digicademy/cvma/corpusvitrearum>`
+`corpusvitrearum <https://gitlab.rlp.net/adwmainz/digicademy/cvma/corpusvitrearum>`__
 instead.**
 
 ===========
