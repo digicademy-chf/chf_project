@@ -1,0 +1,1 @@
+**Outdated package, all current CHF repos live at https://gitlab.rlp.net/adwmainz/digicademy/chf, please switch to the new URL**
